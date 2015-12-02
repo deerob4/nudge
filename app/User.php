@@ -28,7 +28,15 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'gender',
+        'dob',
+        'facebook_link',
+        'photo_url'
+    ];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -36,4 +44,14 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * The user's nudges.
+     * 
+     * @return Class App\Nudge
+     */
+    public function nudges()
+    {
+        return $this->hasMany('App\Nudge');
+    }
 }
