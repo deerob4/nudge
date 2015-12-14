@@ -12,4 +12,19 @@ class Nudge extends Model
      * @var string
      */
     protected $table = 'nudges';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'sender_id',
+        'receiver_id',
+    ];
+
+    public function sender()
+    {
+        return $this->hasOne('App\User');
+    }
 }

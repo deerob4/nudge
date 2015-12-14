@@ -12,6 +12,6 @@ class HomeController extends Controller
 {
     public function showHome()
     {
-        return view('pages.home', ['users' => User::all()]);
+        return view('pages.home');
     }
 }

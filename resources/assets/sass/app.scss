@@ -1,2 +1,12 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$font-stack: 'Roboto Slab', sans-serif;
 
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/normalize.css/normalize";
+@import "navbar";
+@import "arrow";
+@import "thumbnail";
+@import "login-bar";
+
+body {
+  background-color: #f5f5f5;
+}

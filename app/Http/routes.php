@@ -1,20 +1,12 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+Route::get('/', ['middleware' => 'auth', 'uses' => 'HomeController@showHome']);
 
-Route::get('/', 'HomeController@showHome');
+Route::get('/api/users', 'UserController@getUsers');
 
-Route::get('/login', 'AccountController@showLogin');
+Route::post('/api/nudges/{receiver_id}', 'NudgeController@createNudge');
+Route::get('/api/nudges', 'NudgeController@getNudges');
 
-Route::get('/register', 'AccountController@showRegister');
-
-Route::get('/users/{id}', 'UserController@showProfile');
+Route::controllers([
+    'auth' => 'Auth\AuthController'
+]);

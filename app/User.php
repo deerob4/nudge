@@ -33,6 +33,7 @@ class User extends Model implements AuthenticatableContract,
         'email',
         'password',
         'gender',
+        'sexuality',
         'dob',
         'facebook_link',
         'photo_url'
@@ -52,6 +53,6 @@ class User extends Model implements AuthenticatableContract,
      */
     public function nudges()
     {
-        return $this->hasMany('App\Nudge');
+        return $this->hasMany('App\Nudge', 'sender_id');
     }
 }

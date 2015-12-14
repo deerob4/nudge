@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt($faker->password()),
                 'dob' => $faker->date($format = 'Y-m-d', $max = 'now'),
                 'gender' => $faker->randomElement($array = array('m', 'f')),
-                'sexuality' => $faker->randomElement($array = array('men', 'women', 'both', 'neither')),
+                'sexuality' => $faker->randomElement($array = array('straight', 'gay', 'lesbian', 'bisexual')),
                 'town' => $faker->city(),
                 'facebook_link' => 'https://www.facebook.com/' . $faker->username(),
                 'photo_url' => 'http://loremflickr.com/500/500/man'
