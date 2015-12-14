@@ -7,10 +7,22 @@
   <div class="container">
     <form method="post">
       {!! csrf_field() !!}
-      <input class="d-control" name="email" type="email" placeholder="johnsmith@gmail.com" />
-      <input class="d-control" name="password" type="password" placeholder="Something secret!" />
-      <button class="btn btn-success" type="submit">Login</button>
-      <button class="btn btn-primary">Register</button>
+      <div class="row">
+        <div class="form-group">
+          <div class="col-md-4">
+            <label for="email">Email</label>
+          <input class="form-control" id="email" name="email" type="email" placeholder="johnsmith@gmail.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-4">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" name="password" type="password" placeholder="Something  secret!" />
+          </div>
+        </div>
+        <button class="btn btn-success" type="submit">Login</button>
+        <a href={{ url('auth/register') }}><div class="btn btn-primary">Register</div></a>
+      </div>
     </form>
   </div>
 </div>
