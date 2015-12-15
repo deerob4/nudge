@@ -34,9 +34,18 @@ class NudgeController extends Controller
             'receiver_id' => $receiver_id
         ]);
       
-        $facebook_url = User::find($receiver_id)->facebook_url;
+        Mail::raw('Laravel with Mailgun is easy!', function($message)
+        {
+            $message->to('deerob4@gmail.com');
+        });
       
-        Mail::send('emails.new_nudge', ['user' => Auth::User()])
+//         Mail::send('emails.new_nudge', [
+//           'user' => Auth::User(),
+//           'nudger' => User::find($receiver_id)
+//         ], function ($m) use ($user) {
+//           $m->from('nudj@app.com', 'You\'ve been nudjed!');
+//           $m->to($user->email, $user->name)->subject('You\'ve been nudjed!');
+//         });
 
         return Auth::user()->nudges;
     }

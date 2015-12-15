@@ -7,6 +7,10 @@ $font-stack: 'Roboto Slab', sans-serif;
 @import "thumbnail";
 @import "login-bar";
 
+* {
+  font-family: $font-stack !important;
+}
+
 body {
   background-color: #f5f5f5;
 }

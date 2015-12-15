@@ -23,14 +23,14 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <label for="email">My email is:</label>
+        <label for="email">My email is: (you'll use this to login and receive nudj notifications)</label>
         <input class="form-control" id="email" name="email" type="email" placeholder="johnsmith@gmail.com" />
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-group">
-        <label for="name">My name is:</label>
+        <label for="name">My name is: (please use your real one; other people will see you as this)</label>
         <input class="form-control" id="name" name="name" type="text" placeholder="John Smith" />
       </div>
     </div>
@@ -57,7 +57,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="form-group">
-        <label for="dob">And I was born on:</label>
+        <label for="dob">And I was born on: (we use this so people know your age)</label>
         <input class="form-control" id="dob" name="dob" type="date" placeholder="Something secret!" />
       </div>
     </div>
@@ -67,12 +67,13 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <label for="sexuality">My sexuality is:</label>
+        <label for="sexuality">My sexuality is: (this is so we only show you suitable matches)</label>
         <select class="form-control" id="sexuality" name="sexuality">  
           <option value="straight">Straight</option>
           <option value="gay">Gay</option>
           <option value="lesbian">Lesbian</option>
           <option value="bisexual">Bisexual</option>
+          <option value="straight">Rather not say</option>
         </select>
       </div>
     </div>
@@ -93,26 +94,22 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <label for="facebook_link">My Facebook URL is:</label>
+        <label for="facebook_link">My Facebook URL is: (so people who nudj you can find out more!)</label>
         <input class="form-control" id="facebook_link" name="facebook_link" placeholder="facebook.com/johnsmith4" />  
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-group">
-        <label for="photo_url">Enter a URL for your photo:</label>
+        <label for="photo_url">Enter a URL for your photo: (this is how you'll be shown on nudj)</label>
         <input class="form-control" id="photo_url" name="photo_url" />
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <button type="submit" class="btn btn-primary col-md-">
-        Register
-      </button>
-    </div>
-  </div>
+  <button type="submit" class="btn btn-success btn-block">
+    Create your account!
+  </button>
 </form>
 </div>
 @stop

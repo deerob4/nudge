@@ -8795,7 +8795,11 @@ h1 {
 
 .login-bar {
   background-color: #ddd;
-  height: 55px;
+  height: 65px;
+}
+
+* {
+  font-family: "Roboto Slab", sans-serif !important;
 }
 
 body {
