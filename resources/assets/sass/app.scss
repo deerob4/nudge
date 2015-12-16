@@ -7,12 +7,20 @@ $font-stack: 'Roboto Slab', sans-serif;
 @import "thumbnail";
 @import "login-bar";
 
-h1, p, button, input, h2, h3, label, .promo {
+h1, p, button, input, h2, h3, label, .promo, a {
   font-family: $font-stack !important;
 }
 
 ol > li {
   margin-bottom: 30px;
+}
+
+.navbar-right {
+  margin-top: 13px;
+}
+
+.navbar-right li a {
+  color: #fff;
 }
 
 .promo {

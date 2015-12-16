@@ -18,6 +18,7 @@ h1 {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
+  position: relative;
 }
 
 .navbar-brand {
@@ -26,8 +27,8 @@ h1 {
   text-align: center;
   color: #fff;
   line-height: 40px;
-}
-
-.navbar-header {
-  margin-left: 35% !important;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
 }

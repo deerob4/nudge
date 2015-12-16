@@ -24,6 +24,9 @@
         <ul class="nav navbar-nav navbar-right">
           @if(Auth::check())
             <li><a href={{ url('auth/logout') }}>Logout</a></li>
+          @elseif(Request::path() === 'auth/login')
+          @elseif(Request::path() === 'auth/register')
+            <li><a href={{ url('auth/login') }}>Login</a></li>
           @else
             <li><a href={{ url('auth/login') }}>Login</a></li>
             <li><a href={{ url('auth/register') }}>Register</a></li>

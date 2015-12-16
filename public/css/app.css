@@ -8761,6 +8761,7 @@ h1 {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
+  position: relative;
 }
 
 .navbar-brand {
@@ -8769,10 +8770,11 @@ h1 {
   text-align: center;
   color: #fff;
   line-height: 40px;
-}
-
-.navbar-header {
-  margin-left: 35% !important;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;
+  /* 50% of your logo width */
+  display: block;
 }
 
 .arrow-left {
@@ -8809,12 +8811,21 @@ input,
 h2,
 h3,
 label,
-.promo {
+.promo,
+a {
   font-family: "Roboto Slab", sans-serif !important;
 }
 
 ol > li {
   margin-bottom: 30px;
+}
+
+.navbar-right {
+  margin-top: 13px;
+}
+
+.navbar-right li a {
+  color: #fff;
 }
 
 .promo {
