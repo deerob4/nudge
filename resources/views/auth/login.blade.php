@@ -46,7 +46,7 @@
     </ol>
   </div>
   <div class="col-md-6">
-    <div class="thumbnail"><img src="http://www.shadowvalleydental.com/blog/wp-content/uploads/2012/08/teenager_girl.jpg" alt=""></div>
+    <div class="thumbnail"><img src={{ asset('img/promo.png') }} alt=""></div>
   </div>
     <h3>We're mobile friendly, so why not use us on the go?</h3>
 </div>
