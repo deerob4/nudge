@@ -11,6 +11,10 @@ h1, p, button, input, h2, h3, label, .promo {
   font-family: $font-stack !important;
 }
 
+ol > li {
+  margin-bottom: 30px;
+}
+
 .promo {
   font-weight: 100;
   font-size: 20px;

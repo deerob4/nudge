@@ -35,17 +35,19 @@
 @section('content')
 <div class="jumbotron">
 <h1>Interested in someone?</h1>
-<h2 style="text-align:center;margin-bottom: 35px;margin-top: -20px;">Use nudj to get in touch with them!</h2>
-<div class="thumbnail">
-  <div className="tick">
-    <i className="fa fa-check-circle"></i>
+<h2 style="text-align:center;margin-bottom: 35px;margin-top: -20px;">Use nudj, the simplest way to get in touch!</h2>
+<div class="row">
+  <div class="col-md-6">
+    <ol>
+      <li class="promo">Give them a nudj by simply clicking on their picture.</li>
+      <li class="promo">A tick will appear, and they'll receive an email alerting them to your nudj.</li>
+      <li class="promo">If they like you, they'll get in touch with you through Facebook!</li>
+      <li class="promo">If they haven't responded after a week, you can nudj them again.</li>
+    </ol>
   </div>
-  <img src="http://lorempixel.com/250/250/people/">
+  <div class="col-md-6">
+    <div class="thumbnail"><img src="http://www.shadowvalleydental.com/blog/wp-content/uploads/2012/08/teenager_girl.jpg" alt=""></div>
+  </div>
+    <h3>We're mobile friendly, so why not use us on the go?</h3>
 </div>
-<ol>
-  <li class="promo">Give them a nudj by clicking on their picture</li>
-  <li class="promo">A tick will appear on their picture, and they'll receive an email alerting them.</li>
-  <li class="promo">Then simply wait until they contact you!</li>
-</ol>
-<h3>We're mobile friendly, so why not use us on the go?</h3>
 @stop

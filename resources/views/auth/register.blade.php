@@ -107,6 +107,11 @@
     </div>
   </div>
 
+  <label>
+    I accept the <a href={{ url('/terms') }}>terms and conditions</a>
+    <input type="checkbox" name="terms">
+  </label>
+
   <button type="submit" class="btn btn-success btn-block">
     Create your account!
   </button>

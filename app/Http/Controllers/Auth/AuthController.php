@@ -49,6 +49,7 @@ class AuthController extends Controller
             'sexuality' => 'required',
             'dob' => 'required|date',
             'facebook_link' => 'required|url',
+            'terms' => 'required',
             'photo_url' => 'required|url'
         ]);
     }

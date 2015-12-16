@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', ['middleware' => 'auth', 'uses' => 'HomeController@showHome']);
+Route::get('/terms', 'HomeController@showTerms');
 
 Route::get('/api/users', 'UserController@getUsers');
 
