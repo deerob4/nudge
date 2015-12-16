@@ -52,9 +52,6 @@ class NudgeApp extends Component {
           {this.state.users.map(user =>
             <UserImage key={user.id}
                        id={user.id}
-                       name={user.name}
-                       dob={user.dob}
-                       town={user.town}
                        photoUrl={user.photo_url}
                        nudged={this.state.nudges.find(nudge =>
                          nudge.receiver_id === user.id

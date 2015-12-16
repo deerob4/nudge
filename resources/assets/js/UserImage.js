@@ -18,7 +18,6 @@ class UserImage extends Component {
                src={this.props.photoUrl}
                alt={this.props.name} />
         </div>
-        <p className="user-info">{this.props.name}, {this.props.town} ({getAge(this.props.dob)} years)</p>
       </div>
     );
   }

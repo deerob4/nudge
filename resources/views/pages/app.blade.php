@@ -6,7 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href={{ asset('css/app.css') }}>
-  <title>Nudge - @yield('title')</title>
+  <title>Nudj - @yield('title')</title>
 </head>
 <body>
   <nav class="navbar">

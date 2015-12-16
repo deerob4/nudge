@@ -19983,9 +19983,6 @@ var NudgeApp = (function (_Component) {
           this.state.users.map(function (user) {
             return _react2['default'].createElement(_UserImage2['default'], { key: user.id,
               id: user.id,
-              name: user.name,
-              dob: user.dob,
-              town: user.town,
               photoUrl: user.photo_url,
               nudged: _this4.state.nudges.find(function (nudge) {
                 return nudge.receiver_id === user.id;
@@ -20076,16 +20073,6 @@ var UserImage = (function (_Component) {
           _react2['default'].createElement('img', { onClick: this.props.nudged ? null : this.props.nudgeUser.bind(this, this.props.id),
             src: this.props.photoUrl,
             alt: this.props.name })
-        ),
-        _react2['default'].createElement(
-          'p',
-          { className: 'user-info' },
-          this.props.name,
-          ', ',
-          this.props.town,
-          ' (',
-          (0, _getAge2['default'])(this.props.dob),
-          ' years)'
         )
       );
     }
