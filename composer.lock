@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7c34184f409a8dd1d5c0eab72bdab89",
-    "content-hash": "4822ae14c845106463513fbd9ef9a7c3",
+    "hash": "3c01ecdd0f506608c79c1b49b02080d3",
+    "content-hash": "0424e0e0f145256d67164b7121f2b657",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.11.5",
+            "version": "3.11.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c"
+                "reference": "442d5cd0be09fe7ee6d0f4448624e52fb503c198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7bf365f33b79e6bda6b936343c669537aa598e7c",
-                "reference": "7bf365f33b79e6bda6b936343c669537aa598e7c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/442d5cd0be09fe7ee6d0f4448624e52fb503c198",
+                "reference": "442d5cd0be09fe7ee6d0f4448624e52fb503c198",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-12-08 21:54:51"
+            "time": "2015-12-16 01:04:57"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -791,6 +791,56 @@
                 "laravel"
             ],
             "time": "2015-12-02 21:59:57"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "f62269629b2a1093039733517bd7e75b3f98dffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/f62269629b2a1093039733517bd7e75b3f98dffb",
+                "reference": "f62269629b2a1093039733517bd7e75b3f98dffb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-11-28 08:27:09"
         },
         {
             "name": "league/flysystem",
