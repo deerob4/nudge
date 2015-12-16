@@ -8771,6 +8771,10 @@ h1 {
   line-height: 40px;
 }
 
+.navbar-header {
+  margin-left: 35% !important;
+}
+
 .arrow-left {
   float: left;
   width: 48%;
@@ -8798,8 +8802,20 @@ h1 {
   height: 65px;
 }
 
-* {
+h1,
+p,
+button,
+input,
+h2,
+h3,
+label,
+.promo {
   font-family: "Roboto Slab", sans-serif !important;
+}
+
+.promo {
+  font-weight: 100;
+  font-size: 20px;
 }
 
 body {

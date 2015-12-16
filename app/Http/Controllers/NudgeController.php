@@ -29,23 +29,20 @@ class NudgeController extends Controller
      */
     public function createNudge(Request $request, $receiver_id)
     {
+        $user = Auth::user();
+        $nudger = User::find($receiver_id);
+
         Nudge::create([
             'sender_id' => Auth::user()->id,
             'receiver_id' => $receiver_id
         ]);
       
-        Mail::raw('Laravel with Mailgun is easy!', function($message)
-        {
-            $message->to('deerob4@gmail.com');
+        Mail::send('emails.new_nudge', [
+          'user' => $user,
+          'nudger' => $nudger
+        ], function ($m) use ($nudger) {
+          $m->to($nudger->email, $nudger->name)->subject('You\'ve been nudjed!');
         });
-      
-//         Mail::send('emails.new_nudge', [
-//           'user' => Auth::User(),
-//           'nudger' => User::find($receiver_id)
-//         ], function ($m) use ($user) {
-//           $m->from('nudj@app.com', 'You\'ve been nudjed!');
-//           $m->to($user->email, $user->name)->subject('You\'ve been nudjed!');
-//         });
 
         return Auth::user()->nudges;
     }

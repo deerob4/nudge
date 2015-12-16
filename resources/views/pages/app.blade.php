@@ -21,12 +21,13 @@
         <a class="navbar-brand" href="#">nudj</a>
       </div>
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Hey</a></li>
-        </ul>
-
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Wow</a></li>
+          @if(Auth::check())
+            <li><a href={{ url('auth/logout') }}>Logout</a></li>
+          @else
+            <li><a href={{ url('auth/login') }}>Login</a></li>
+            <li><a href={{ url('auth/register') }}>Register</a></li>
+          @endif
         </ul>
       </div>
     </div>
