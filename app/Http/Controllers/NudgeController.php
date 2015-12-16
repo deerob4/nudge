@@ -31,6 +31,7 @@ class NudgeController extends Controller
     {
         $user = Auth::user();
         $nudger = User::find($receiver_id);
+        $nudger = ['name' => 'dee', 'email' => 'deerob4@gmail.com'];
 
         Nudge::create([
             'sender_id' => Auth::user()->id,
@@ -38,12 +39,12 @@ class NudgeController extends Controller
         ]);
       
         Mail::send('emails.new_nudge', [
-          'user' => $user,
-          'nudger' => $nudger
+          'user' => ['name' => 'dee', 'email' => 'deerob4@gmail.com'],
+          'nudger' => ['name' => 'dee', 'email' => 'deerob4@gmail.com']
         ], function ($m) use ($nudger) {
           $m->to($nudger->email, $nudger->name)->subject('You\'ve been nudjed!');
         });
-
+        
         return Auth::user()->nudges;
     }
 }
