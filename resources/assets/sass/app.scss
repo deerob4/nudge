@@ -7,8 +7,13 @@ $font-stack: 'Roboto Slab', sans-serif;
 @import "thumbnail";
 @import "login-bar";
 
-* {
+h1, p, button, input, h2, h3, label, .promo {
   font-family: $font-stack !important;
+}
+
+.promo {
+  font-weight: 100;
+  font-size: 20px;
 }
 
 body {
