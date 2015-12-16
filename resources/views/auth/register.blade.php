@@ -101,7 +101,7 @@
 
     <div class="col-md-6">
       <div class="form-group">
-        <label for="photo_url">Enter a URL for your photo: (this is how you'll be shown on nudj)</label>
+        <label for="photo_url">My Facebook picture URL: (this is how you'll be shown on nudj)</label>
         <input class="form-control" id="photo_url" name="photo_url" />
       </div>
     </div>
