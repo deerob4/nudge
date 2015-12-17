@@ -10,7 +10,8 @@
 	"laravelcollective/html": "5.1.*",
         "fzaninotto/faker": "^1.5",
         "aws/aws-sdk-php": "~3.0",
-        "guzzlehttp/guzzle": "~5.3|~6.0"
+        "guzzlehttp/guzzle": "~5.3|~6.0",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
