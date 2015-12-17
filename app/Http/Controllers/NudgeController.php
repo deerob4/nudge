@@ -31,7 +31,6 @@ class NudgeController extends Controller
     {
         $user = Auth::user();
         $nudger = User::find($receiver_id);
-        $nudger = ['name' => 'dee', 'email' => 'deerob4@gmail.com'];
 
         Nudge::create([
             'sender_id' => Auth::user()->id,
